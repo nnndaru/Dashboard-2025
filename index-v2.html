@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard 2025</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/logo-ndr.jpg" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Roboto:wght@300;400&family=Roboto+Mono:wght@300&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Custom Styles -->
+    <style>
+      body {
+        font-family: 'Poppins', sans-serif;
+      }
+      
+      /* Custom scrollbar for webkit browsers */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      
+      ::-webkit-scrollbar-track {
+        background: #585858;
+      }
+      
+      ::-webkit-scrollbar-thumb {
+        background: #b30000;
+        border-radius: 4px;
+      }
+      
+      ::-webkit-scrollbar-thumb:hover {
+        background: #e60000;
+      }
+    </style>
+    
+    <!-- Tailwind Custom Components -->
+    <style type="text/tailwindcss">
+      @layer components {
+        .button-box {
+          @apply w-24 h-24 md:w-32 md:h-32 md:text-[16px] 
+                 bg-[#585858] border-2 rounded-full p-4 
+                 flex items-center justify-center 
+                 hover:bg-[#b30000] 
+                 transition-all duration-150 
+                 shadow-md hover:shadow-xl 
+                 text-white hover:text-[#ffffff] 
+                 font-medium hover:font-bold 
+                 text-[12px] hover:text-[16px] 
+                 border-gray-600/10 hover:border-[#ffffff]/60 
+                 hover:scale-110
+                 cursor-pointer
+                 focus:outline-none focus:ring-2 focus:ring-white;
+        }
+        
+        .button-container {
+          @apply flex flex-wrap justify-center items-center 
+                 gap-6 md:gap-8 p-6 md:p-8
+                 max-w-7xl mx-auto;
+        }
+      }
+    </style>
+</head>
+
+<body class="bg-gray-800 min-h-screen flex flex-col">
+    <!-- Header -->
+    <header class="bg-gray-900 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <h1 class="text-white text-2xl md:text-3xl font-bold text-center">
+                Dashboard 2025
+            </h1>
+        </div>
+    </header>
+    
+    <!-- Main Content -->
+    <main class="flex-grow flex items-center justify-center">
+        <!-- Button Grid -->
+        <div class="button-container">
+            <a href="https://docs.google.com/spreadsheets/d/1OSHnpgHlZD1ubfTJEt47sSfd5YGpEEnoQYwSzQ3KSjY/edit?gid=729968468#gid=729968468" 
+               aria-label="Daily Log" 
+               title="Daily Log"
+               class="button-box">
+               Log
+            </a>
+            
+            <a href="https://docs.google.com/spreadsheets/d/11A6iMpVRbjBxOfKaqgJEw7RHpleqT0NpWGLqbQudcE4/edit?gid=1339481891#gid=1339481891" 
+               aria-label="To-Do List" 
+               title="To-Do List"
+               class="button-box">
+               ToDo
+            </a>
+            
+            <a href="https://docs.google.com/spreadsheets/u/0/d/1NXAKbWyXa_Kxk8w2vyfVgMz85MkOnIXplfUxI7i3_tc/edit" 
+               aria-label="Inventory" 
+               title="Inventory"
+               class="button-box">
+               Inventory
+            </a>
+            
+            <a href="https://jak101fm.com/streaming/" 
+               aria-label="Jak FM" 
+               title="Jak FM"
+               class="button-box">
+               Jak
+            </a>
+            
+            <a href="https://www.google.com/search?q=hex+color" 
+               aria-label="Hex Color Search" 
+               title="Hex Color Search"
+               class="button-box">
+               Hex
+            </a>
+            
+            <a href="https://tailwindcss.com/" 
+               aria-label="Tailwind CSS" 
+               title="Tailwind CSS"
+               class="button-box">
+               Tailwind
+            </a>
+            
+            <a href="https://github.com/" 
+               aria-label="GitHub" 
+               title="GitHub"
+               class="button-box">
+               GitHub
+            </a>
+            
+            <a href="https://www.notion.so/WPH-3-2025-4104d2537da34b83b3f5f1a623a98560" 
+               aria-label="Notion Workspace" 
+               title="Notion Workspace"
+               class="button-box">
+               Notion
+            </a>
+        </div>
+    </main>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-4">
+        <p class="text-sm opacity-75">© 2025 Dashboard. All rights reserved.</p>
+    </footer>
+</body>
+</html>
